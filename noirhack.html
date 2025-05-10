@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pSymm - Private OTC Trading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <style>
+        .reveal section {
+            text-align: left;
+        }
+        .reveal h1 {
+            font-size: 2.5em;
+        }
+        .reveal h2 {
+            font-size: 1.8em;
+        }
+        .reveal ul {
+            margin-left: 1em;
+        }
+        .problem-point {
+            color: #ff6b6b;
+        }
+        .solution-point {
+            color: #51cf66;
+        }
+        i {
+            color: silver;
+        }
+		a {
+			text-decoration: underline !important;
+		}
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title -->
+            <section>
+                <h1>pSymm</h1>
+                <h3>Private & Symmetric OTC Trading</h3>
+            </section>
+
+            <!-- Problem -->
+            <section>
+                <h2>The Problem</h2>
+                <ul>
+                    <li class="problem-point">Current Trading Options are Suboptimal:</li>
+                    <li>DEX: Complete exposure of trading activity</li>
+                    <li>CEX: Loss of fund custody and control</li>
+                    <li>Public orderbooks (CLOB/AMM):
+                        <ul>
+                            <li>No privacy possible</li>
+						</ul>
+					</li>
+                    <li>Existing OTC solutions
+                        <ul>
+                            <li>High costs and barriers to entry</li>
+                            <li>Limited access for smaller traders</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Solution -->
+            <section>
+                <h2>Our Solution: pSymm</h2>
+                <ul>
+                    <li class="solution-point">Trade privately off-chain</li>
+                    <li>Collateral secured on Aztec L2</li>
+                    <li>Dispute resolution mechanism</li>
+					<li>P2P architecture enabling full private OTC</li>
+					<li>Trade any derivatives: perps, stocks, FX, ETFs</li>
+                </ul>
+            </section>
+
+            <!-- Problem: Case Study -->
+            <section>
+                <h2>Solution: Case Study</h2>
+				<p class="problem-point">Traditional DEX Scenario:</p>
+                <ul>
+                    <li>A whale wants to open a $300M+ position</li>
+                    <li>Uses Hyperliquid, exposes their position</li>
+                    <li>Traders try to liquidate the position</li>
+                </ul>
+				<p class="solution-point">With pSymm:</p>
+                <ul>
+                    <li>Same whale opens $300M+ position privately</li>
+                    <li>With pSymm, executes trade off-chain</li>
+                    <li>Only trader and counterparty see the trade</li>
+                </ul>
+            </section>
+
+
+            <!-- Opportunity -->
+            <section>
+                <h2>Market Opportunity</h2>
+                <ul>
+                    <li>100x cost reduction of OTC operations</li>
+                    <li>Onchain perps revenue in 2024 is $250M</li>
+                    <li>Enabling small players to bypass traditional banking barriers</li>
+                    <li>Growing demand for private, trustless trading solutions</li>
+                </ul>
+				<p><i>"Traditionally, dark pools are way bigger than ... orderbooks"</i> - CZ, co-founder of Binance</p>
+				<small><a target="_blank" href="https://www.youtube.com/watch?v=n1W5VbLFZtw&t=2795s">interview link</a></small>
+            </section>
+
+            <!-- Demo -->
+            <section>
+                <h2>Demo</h2>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                        src="https://www.youtube.com/embed/b9QcG4kdEPY?rel=0" 
+                        title="pSymm Demo"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Team -->
+            <section>
+                <h2>Team</h2>
+                <div>
+                    <h3>Vlad</h3>
+                    <p>Working with Symm.io to bring private p2p trading to life.</p>
+                    <h3>SYMMIO</h3>
+                    <ul>
+                        <li>Live with $11B+ trading volume</li>
+                        <li>320+ trading pairs with CEX-level liquidity</li>
+                        <li>Operating on 9 EVM DEXes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Vision</h2>
+                <ul>
+                    <li>Onchain OTC offers deeper liquidity than orderbooks, and is the solution to list thousands of assets</li>
+                    <li>Messari report on Symmio: <a href="https://x.com/MessariCrypto/status/1875924374815199447" target="_blank">link</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide'
+        });
+    </script>
+</body>
+</html>
